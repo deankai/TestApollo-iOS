@@ -1,0 +1,25 @@
+
+
+
+query LaunchList {
+  launches {
+    cursor
+    hasMore
+  }
+}
+
+query GetLaunch {
+  launch(id: 1) {
+    site
+  }
+}
+
+query GetME {
+  me {
+    id
+  }
+}
+
+mutation Login($email: String) {
+  login(email: $email)
+}
